@@ -1,4 +1,5 @@
 # reactjs-course
+https://fr.reactjs.org/tutorial/tutorial.html#taking-turns
 
 Project that compiles concepts from React.js
 
