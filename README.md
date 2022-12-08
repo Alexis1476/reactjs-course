@@ -13,6 +13,20 @@ Project that compiles concepts from React.js
 
 _this.state_ dans le constructeur
 
+## State
+setState() pour modifier l'état d'un composant.
+
+## Props
+Read-only, les composants ne peuvent pas les modifier.
+
+## Attribues en JSX
+```js
+    // If JS expression
+    <div id={user.id}></div>
+    // If attribute
+    <div id="name"></div>
+```
+
 ### Composants contrôlés
 
 Composants enfants qui n'ont pas d'état local, car un composant parent
@@ -58,6 +72,24 @@ player.score = 2;
 var player = {score: 1, name: 'Jérémie'};
 var newPlayer = {...player, score: 2};
 ```
+## Hooks
+Permet d'utiliser state à l'interieur d'un composant fonctionnel.
+```js
+import React, {useState} from 'react';
+
+const Hello = () =>{
+    // Array destructuring because useState return 2 values (variable and set function)
+    const [name, setName] = useState('initialValue');
+    return <h1>{name}</h1>
+};
+```
+
+## Méthodes du cycle de vie
+Mounting - Lorsqu'un composant est affichl dans la page
+    - componentDidMount : Methode appelée quand un composant est affiché dans la page (initialiser des variables)
+Unmounting - Lorsqu'un composant est supprimé de la page
+    - componentDidUnount : Methode appelée quand un composant est supprimé de la page (liberer des ressources)
+
 
 ## Normes
 
