@@ -1,4 +1,5 @@
 # reactjs-course
+
 https://fr.reactjs.org/tutorial/tutorial.html#taking-turns
 
 Project that compiles concepts from React.js
@@ -62,3 +63,17 @@ var newPlayer = {...player, score: 2};
 
 - on[event] Pour les props qui représentent des évènements
 - handle[event] Méthodes qui gèrent ces évènements
+
+## Autres
+
+concat() ne modifie pas le tableau d'origine.
+
+
+## Keys
+- Pour les listes il faut définir un ID pour chaque élément.
+- Prop _key_ est spéciale et reservée en React.
+- Key est utilié par React pour savoir quels composants mettre à jour.
+- 
+```js
+<li key={user.id}>{user.name} : {user.taskCount} tâches restantes</li>
+```
